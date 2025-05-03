@@ -13,11 +13,11 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2 mb-2">
               <MapPin className="h-4 w-4 text-primary" />
-              <span className="text-sm text-muted-foreground">Saharanpur, Uttar Pradesh</span>
+              <span className="text-sm text-muted-foreground">Circular Road, Opposite Private Ward, SBD Hospital, Prabhatpuram, Saharanpur</span>
             </div>
             <div className="flex items-center gap-2 mb-2">
               <Phone className="h-4 w-4 text-primary" />
-              <span className="text-sm text-muted-foreground">+91 XXXXX XXXXX</span>
+              <span className="text-sm text-muted-foreground">+91 9410805042, +91 9412230586</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4 text-primary" />
@@ -49,15 +49,13 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4 text-primary" />
-                <span className="text-sm font-medium">Working Hours</span>
+                <span className="text-sm font-medium">Clinic Hours</span>
               </div>
               <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
-                <span>Monday - Friday:</span>
-                <span>9:00 AM - 7:00 PM</span>
-                <span>Saturday:</span>
-                <span>9:00 AM - 5:00 PM</span>
+                <span>Monday - Saturday:</span>
+                <span>11:00 AM - 3:00 PM<br/>6:30 PM - 8:00 PM</span>
                 <span>Sunday:</span>
-                <span>Closed (Emergency Only)</span>
+                <span>12:00 PM - 2:00 PM<br/>(By appointment only)</span>
               </div>
             </div>
           </div>

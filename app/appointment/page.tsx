@@ -125,24 +125,17 @@ export default function AppointmentPage() {
   }
 
   const timeSlots = [
-    "9:00 AM",
-    "9:30 AM",
-    "10:00 AM",
-    "10:30 AM",
     "11:00 AM",
     "11:30 AM",
     "12:00 PM",
     "12:30 PM",
+    "1:00 PM",
+    "1:30 PM",
     "2:00 PM",
     "2:30 PM",
-    "3:00 PM",
-    "3:30 PM",
-    "4:00 PM",
-    "4:30 PM",
-    "5:00 PM",
-    "5:30 PM",
-    "6:00 PM",
     "6:30 PM",
+    "7:00 PM",
+    "7:30 PM",
   ]
 
   return (
@@ -172,13 +165,16 @@ export default function AppointmentPage() {
           <Card className="lg:col-span-3">
             <CardContent className="p-6 space-y-4">
               <h3 className="text-xl font-bold">Our Location</h3>
-              <div className="aspect-[21/9] w-full bg-muted rounded-md overflow-hidden">
-                {/* This would be replaced with an actual Google Maps embed */}
-                <div className="w-full h-full flex flex-col items-center justify-center bg-muted text-muted-foreground p-4">
-                  <MapPin className="h-12 w-12 mb-2 text-primary" />
-                  <p className="text-center">Map of Shanti Nursing Home</p>
-                  <p className="text-center text-sm">Saharanpur, Uttar Pradesh</p>
-                </div>
+              <div className="aspect-[21/9] w-full rounded-md overflow-hidden">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d864.1536701213997!2d77.55683767620589!3d29.956928274967822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eeaa04a268cc7%3A0xbf48d0db6b75cbec!2sShanti%20Nursing%20Home!5e1!3m2!1sen!2sca!4v1746291883106!5m2!1sen!2sca" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen={true} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </CardContent>
           </Card>
@@ -356,14 +352,14 @@ export default function AppointmentPage() {
                     <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <div>
                       <p className="font-medium">Address</p>
-                      <p className="text-muted-foreground">Saharanpur, Uttar Pradesh, India</p>
+                      <p className="text-muted-foreground">Circular Road, Opposite Private Ward, SBD Hospital, Prabhatpuram, Saharanpur</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Phone className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <div>
                       <p className="font-medium">Phone</p>
-                      <p className="text-muted-foreground">+91 XXXXX XXXXX</p>
+                      <p className="text-muted-foreground">+91 9410805042, +91 9412230586</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -376,10 +372,10 @@ export default function AppointmentPage() {
                   <div className="flex items-start gap-3">
                     <Clock className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-medium">Working Hours</p>
-                      <p className="text-muted-foreground">Monday - Friday: 9:00 AM - 7:00 PM</p>
-                      <p className="text-muted-foreground">Saturday: 9:00 AM - 5:00 PM</p>
-                      <p className="text-muted-foreground">Sunday: Closed (Emergency Only)</p>
+                      <p className="font-medium">Clinic Hours</p>
+                      <p className="text-muted-foreground">Monday - Saturday: 11:00 AM - 3:00 PM</p>
+                      <p className="text-muted-foreground">Evening: 6:30 PM - 8:00 PM</p>
+                      <p className="text-muted-foreground">Sunday: 12:00 PM - 2:00 PM (By appointment only)</p>
                     </div>
                   </div>
                 </div>
@@ -405,8 +401,8 @@ export default function AppointmentPage() {
         <div className="rounded-lg border bg-muted p-6">
           <h3 className="text-lg font-medium mb-2">Emergency Contact</h3>
           <p className="text-muted-foreground">
-            For medical emergencies, please call our emergency line at{" "}
-            <span className="font-medium">+91 XXXXX XXXXX</span> or visit the nearest emergency room.
+            For medical emergencies, please call us at{" "}
+            <span className="font-medium">+91 9410805042, +91 9412230586</span>
           </p>
         </div>
       </div>

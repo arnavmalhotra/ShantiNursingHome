@@ -11,7 +11,7 @@ export default function Home() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-primary">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
                   Shanti Nursing Home
                 </h1>
                 <p className="text-xl text-muted-foreground">Specialized Gynecology & Obstetrics Care in Saharanpur</p>
@@ -27,10 +27,9 @@ export default function Home() {
             <div className="mx-auto lg:ml-auto">
               <img
                 alt="Shanti Nursing Home"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-                height="550"
-                src="/placeholder.svg?height=550&width=800"
-                width="800"
+                className="mx-auto w-full overflow-hidden rounded-xl object-cover object-center lg:order-last"
+                style={{ maxHeight: "500px", objectPosition: "center 40%" }}
+                src="/hospital.png"
               />
             </div>
           </div>
@@ -44,17 +43,17 @@ export default function Home() {
             <div className="flex flex-col items-center gap-2 text-center">
               <MapPin className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">Location</h3>
-              <p className="text-muted-foreground">Saharanpur, Uttar Pradesh</p>
+              <p className="text-muted-foreground">Circular Road, Opposite Private Ward, SBD Hospital, Prabhatpuram, Saharanpur</p>
             </div>
             <div className="flex flex-col items-center gap-2 text-center">
               <Phone className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">Contact</h3>
-              <p className="text-muted-foreground">+91 XXXXX XXXXX</p>
+              <p className="text-muted-foreground">+91 9410805042<br/>+91 9412230586</p>
             </div>
             <div className="flex flex-col items-center gap-2 text-center">
               <Clock className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">Hours</h3>
-              <p className="text-muted-foreground">Mon-Sat: 9AM-7PM</p>
+              <p className="text-muted-foreground">Mon-Sat: 11AM-3PM, 6:30PM-8PM<br/>Sun: 12PM-2PM (By appointment)</p>
             </div>
             <div className="flex flex-col items-center gap-2 text-center">
               <Calendar className="h-10 w-10 text-primary" />
@@ -74,8 +73,9 @@ export default function Home() {
                 alt="Dr. Vinita Malhotra"
                 className="mx-auto aspect-square overflow-hidden rounded-full object-cover object-center border-8 border-white shadow-lg"
                 height="400"
-                src="/placeholder.svg?height=400&width=400"
                 width="400"
+                src="/doctor.png"
+                style={{ objectPosition: "center 20%" }}
               />
             </div>
             <div className="flex flex-col justify-center space-y-4">
@@ -84,15 +84,15 @@ export default function Home() {
                   Meet Our Doctor
                 </h2>
                 <p className="text-xl font-semibold">Dr. Vinita Malhotra</p>
-                <p className="text-lg text-muted-foreground">Gynecologist & Obstetrician</p>
+                <p className="text-lg text-muted-foreground">MBBS, DGO - Gynecologist & Obstetrician</p>
                 <p className="text-muted-foreground">
-                  Dr. Vinita Malhotra is a highly skilled and compassionate gynecologist and obstetrician with years of
-                  experience in women's healthcare. She specializes in providing comprehensive care for women of all
-                  ages, from adolescence through menopause and beyond.
+                  Dr. Vinita Malhotra is a highly skilled and experienced Vaginal Surgeon, practicing since 1996. She has dedicated her career 
+                  to providing exceptional women's healthcare, with expertise in managing both routine and complex gynecological cases.
                 </p>
                 <p className="text-muted-foreground mt-2">
-                  At Shanti Nursing Home, Dr. Malhotra offers personalized care in a comfortable and supportive
-                  environment, ensuring that each patient receives the attention and treatment they deserve.
+                  At Shanti Nursing Home, Dr. Malhotra specializes in comprehensive women's healthcare, from adolescence through menopause. 
+                  Her expertise includes high-risk pregnancy management, infertility treatment, and advanced vaginal surgeries, all delivered 
+                  with a compassionate and patient-centered approach.
                 </p>
               </div>
               <div>
@@ -119,28 +119,28 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
             {[
               {
-                title: "Prenatal Care",
-                description: "Comprehensive care throughout your pregnancy journey",
+                title: "Obstetrics Care",
+                description: "Complete prenatal to postnatal care, including high-risk pregnancy management and recurrent pregnancy loss",
               },
               {
-                title: "Gynecological Exams",
-                description: "Regular check-ups and preventive care for women's health",
+                title: "Gynecological Services",
+                description: "Expert treatment for all female genital tract issues, including specialized vaginal surgeries",
               },
               {
-                title: "Obstetric Services",
-                description: "Complete care during pregnancy, labor, and delivery",
-              },
-              {
-                title: "Family Planning",
-                description: "Counseling and services for family planning needs",
+                title: "Infertility Treatment",
+                description: "Comprehensive evaluation and treatment options for couples facing fertility challenges",
               },
               {
                 title: "Women's Health",
-                description: "Addressing women's health concerns at every life stage",
+                description: "Specialized care for adolescent health, menopause management, and urinary problems",
               },
               {
-                title: "Consultations",
-                description: "Expert advice on gynecological and obstetric matters",
+                title: "Preventive Care",
+                description: "Regular check-ups, vaccinations, and preventive healthcare services",
+              },
+              {
+                title: "Family Planning",
+                description: "Professional counseling and comprehensive family planning services",
               },
             ].map((service, index) => (
               <div

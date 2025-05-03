@@ -17,80 +17,80 @@ export default function ServicesPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {[
             {
-              title: "Prenatal Care",
+              title: "Obstetrics Care",
               description:
-                "Comprehensive care throughout your pregnancy journey, including regular check-ups, ultrasounds, and monitoring of both mother and baby's health.",
+                "Expert care throughout your pregnancy journey, specializing in both normal and high-risk pregnancies, with a focus on maternal and fetal well-being.",
               features: [
-                "Regular prenatal check-ups",
-                "Ultrasound monitoring",
-                "Nutritional guidance",
-                "Pregnancy risk assessment",
-                "Birth planning",
-              ],
-              image: "/placeholder.svg?height=300&width=500",
-            },
-            {
-              title: "Gynecological Exams",
-              description:
-                "Regular check-ups and preventive care for women's health, including pap smears, breast exams, and screening for gynecological conditions.",
-              features: [
-                "Annual well-woman exams",
-                "Pap smears and HPV testing",
-                "Breast examinations",
-                "Pelvic examinations",
-                "Preventive health screenings",
-              ],
-              image: "/placeholder.svg?height=300&width=500",
-            },
-            {
-              title: "Obstetric Services",
-              description:
-                "Complete care during pregnancy, labor, and delivery, ensuring the health and safety of both mother and baby throughout the process.",
-              features: [
-                "Labor and delivery care",
-                "Postpartum care",
+                "Complete prenatal to postnatal care",
                 "High-risk pregnancy management",
-                "Cesarean section (when necessary)",
-                "Newborn care guidance",
+                "Care for recurrent pregnancy loss",
+                "Regular monitoring and check-ups",
+                "Pregnancy counseling and education",
+              ],
+              image: "/placeholder.svg?height=300&width=500",
+            },
+            {
+              title: "Vaginal Surgery",
+              description:
+                "Specialized surgical expertise for various gynecological conditions, performed with precision and years of experience.",
+              features: [
+                "Advanced surgical techniques",
+                "Minimally invasive procedures",
+                "Expert post-operative care",
+                "Treatment of complex cases",
+                "Personalized surgical planning",
+              ],
+              image: "/placeholder.svg?height=300&width=500",
+            },
+            {
+              title: "Gynecological Care",
+              description:
+                "Comprehensive treatment for all conditions related to the female reproductive system and urinary tract.",
+              features: [
+                "Treatment of infections",
+                "Management of menstrual disorders",
+                "Urinary problem treatment",
+                "Regular health screenings",
+                "Preventive care services",
               ],
               image: "/placeholder.svg?height=300&width=500",
             },
             {
               title: "Family Planning",
               description:
-                "Counseling and services for family planning needs, including contraception options, fertility awareness, and preconception counseling.",
+                "Professional counseling and comprehensive services to help you make informed decisions about family planning.",
               features: [
                 "Contraception counseling",
-                "IUD insertion and removal",
-                "Hormonal contraception management",
-                "Natural family planning guidance",
+                "Family planning education",
+                "Fertility awareness guidance",
                 "Preconception counseling",
+                "Personalized planning options",
               ],
               image: "/placeholder.svg?height=300&width=500",
             },
             {
               title: "Women's Health",
               description:
-                "Addressing women's health concerns at every life stage, from adolescence through menopause and beyond, with personalized care and treatment.",
+                "Specialized care addressing women's health needs at every life stage, from adolescence through menopause.",
               features: [
+                "Adolescent health care",
                 "Menopause management",
-                "Hormone replacement therapy",
-                "Adolescent gynecology",
-                "Urinary tract health",
-                "Sexual health counseling",
+                "Preventive health services",
+                "Health education",
+                "Regular check-ups",
               ],
               image: "/placeholder.svg?height=300&width=500",
             },
             {
-              title: "Gynecological Treatments",
+              title: "Infertility Treatment",
               description:
-                "Diagnosis and treatment of various gynecological conditions, including infections, disorders, and diseases affecting the female reproductive system.",
+                "Comprehensive evaluation and treatment options for couples experiencing fertility challenges.",
               features: [
-                "Treatment of infections",
-                "Management of PCOS",
-                "Endometriosis treatment",
-                "Fibroids management",
-                "Ovarian cyst treatment",
+                "Fertility evaluation",
+                "Treatment planning",
+                "Counseling services",
+                "Regular monitoring",
+                "Personalized care approach",
               ],
               image: "/placeholder.svg?height=300&width=500",
             },
@@ -127,30 +127,30 @@ export default function ServicesPage() {
               {
                 title: "Experienced Doctor",
                 description:
-                  "Dr. Vinita Malhotra brings years of experience and expertise in gynecology and obstetrics.",
+                  "Dr. Vinita Malhotra brings over 25 years of experience since 1996, with specialized expertise in vaginal surgery.",
               },
               {
-                title: "Personalized Care",
+                title: "Specialized Care",
                 description:
-                  "We provide individualized attention and care plans tailored to each patient's unique needs.",
+                  "Expert in managing high-risk pregnancies and providing comprehensive women's healthcare services.",
               },
               {
-                title: "Comfortable Environment",
-                description: "Our facility is designed to provide a comfortable and private setting for all patients.",
+                title: "Established Institution",
+                description: "Serving the community since 1996 with a proven track record of quality healthcare.",
               },
               {
                 title: "Comprehensive Services",
                 description:
-                  "From routine check-ups to specialized treatments, we offer a full range of women's health services.",
+                  "From routine check-ups to specialized treatments, including advanced vaginal surgeries and infertility care.",
               },
               {
-                title: "Patient Education",
+                title: "Accessible Location",
                 description:
-                  "We believe in empowering patients with knowledge about their health and treatment options.",
+                  "Conveniently located on Circular Road, opposite Private Ward, SBD Hospital in Prabhatpuram, Saharanpur.",
               },
               {
-                title: "Compassionate Approach",
-                description: "Our team is committed to providing care with empathy, respect, and understanding.",
+                title: "Patient-Centered Approach",
+                description: "Dedicated to providing personalized care with empathy and professional excellence.",
               },
             ].map((point, index) => (
               <div key={index} className="rounded-lg border bg-muted/50 p-4 space-y-2">
