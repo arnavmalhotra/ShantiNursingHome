@@ -10,7 +10,21 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "Shanti Nursing Home - Gynecology & Obstetrics Care in Saharanpur",
   description: "Specialized gynecology and obstetrics care by Dr. Vinita Malhotra in Saharanpur, Uttar Pradesh.",
-    generator: 'v0.dev'
+  icons: {
+    icon: '/favicon.ico',
+  },
+  openGraph: {
+    title: "Shanti Nursing Home - Gynecology & Obstetrics Care in Saharanpur",
+    description: "Specialized gynecology and obstetrics care by Dr. Vinita Malhotra in Saharanpur, Uttar Pradesh.",
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Shanti Nursing Home'
+      }
+    ]
+  }
 }
 
 export default function RootLayout({

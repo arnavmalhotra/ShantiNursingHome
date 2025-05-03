@@ -1,6 +1,7 @@
 import { Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function ServicesPage() {
   return (
@@ -27,7 +28,7 @@ export default function ServicesPage() {
                 "Regular monitoring and check-ups",
                 "Pregnancy counseling and education",
               ],
-              image: "/placeholder.svg?height=300&width=500",
+              image: "/image1.png",
             },
             {
               title: "Vaginal Surgery",
@@ -40,7 +41,7 @@ export default function ServicesPage() {
                 "Treatment of complex cases",
                 "Personalized surgical planning",
               ],
-              image: "/placeholder.svg?height=300&width=500",
+              image: "/image2.png",
             },
             {
               title: "Gynecological Care",
@@ -53,7 +54,7 @@ export default function ServicesPage() {
                 "Regular health screenings",
                 "Preventive care services",
               ],
-              image: "/placeholder.svg?height=300&width=500",
+              image: "/image3.png",
             },
             {
               title: "Family Planning",
@@ -66,7 +67,7 @@ export default function ServicesPage() {
                 "Preconception counseling",
                 "Personalized planning options",
               ],
-              image: "/placeholder.svg?height=300&width=500",
+              image: "/image4.png",
             },
             {
               title: "Women's Health",
@@ -79,7 +80,7 @@ export default function ServicesPage() {
                 "Health education",
                 "Regular check-ups",
               ],
-              image: "/placeholder.svg?height=300&width=500",
+              image: "/image5.png",
             },
             {
               title: "Infertility Treatment",
@@ -92,15 +93,17 @@ export default function ServicesPage() {
                 "Regular monitoring",
                 "Personalized care approach",
               ],
-              image: "/placeholder.svg?height=300&width=500",
+              image: "/image6.png",
             },
           ].map((service, index) => (
             <div key={index} className="rounded-lg border bg-card overflow-hidden">
-              <div className="aspect-video w-full overflow-hidden">
-                <img
-                  src={service.image || "/placeholder.svg"}
+              <div className="aspect-video w-full overflow-hidden relative">
+                <Image
+                  src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="p-6 space-y-4">
