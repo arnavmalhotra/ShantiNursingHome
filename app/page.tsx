@@ -5,16 +5,31 @@ import { Button } from "@/components/ui/button"
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
+      {/* Doctor Introduction Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-50 to-purple-50">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+          <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 items-center">
+            <div>
+              <img
+                alt="Dr. Vinita Malhotra"
+                className="mx-auto aspect-square overflow-hidden rounded-full object-cover object-center border-8 border-white shadow-lg"
+                height="400"
+                width="400"
+                src="/doctor.png"
+                style={{ objectPosition: "center 20%" }}
+              />
+            </div>
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-                  Shanti Nursing Home
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
+                  Dr. Vinita Malhotra
                 </h1>
-                <p className="text-xl text-muted-foreground">Specialized Gynecology & Obstetrics Care in Saharanpur</p>
+                <p className="text-xl font-semibold">MBBS, DGO - Gynecologist & Obstetrician</p>
+                <p className="text-lg text-muted-foreground">Shanti Nursing Home</p>
+                <p className="text-muted-foreground">
+                  Dr. Vinita Malhotra is a highly skilled and experienced Vaginal Surgeon, practicing since 1996. She has dedicated her career 
+                  to providing exceptional women's healthcare, with expertise in managing both routine and complex gynecological cases.
+                </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/appointment">
@@ -22,6 +37,32 @@ export default function Home() {
                     Book Appointment
                   </Button>
                 </Link>
+                <Link href="/doctor">
+                  <Button variant="outline" size="lg">
+                    Learn More
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Nursing Home */}
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+        <div className="container px-4 md:px-6">
+          <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+            <div className="flex flex-col justify-center space-y-4">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+                  Shanti Nursing Home
+                </h2>
+                <p className="text-xl text-muted-foreground">Specialized Gynecology & Obstetrics Care in Saharanpur</p>
+                <p className="text-muted-foreground mt-2">
+                  At Shanti Nursing Home, Dr. Malhotra specializes in comprehensive women's healthcare, from adolescence through menopause. 
+                  Her expertise includes high-risk pregnancy management, infertility treatment, and advanced vaginal surgeries, all delivered 
+                  with a compassionate and patient-centered approach.
+                </p>
               </div>
             </div>
             <div className="mx-auto lg:ml-auto">
@@ -59,47 +100,6 @@ export default function Home() {
               <Calendar className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">Appointments</h3>
               <p className="text-muted-foreground">Book Online or Call</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-10 lg:grid-cols-2 lg:gap-12 items-center">
-            <div>
-              <img
-                alt="Dr. Vinita Malhotra"
-                className="mx-auto aspect-square overflow-hidden rounded-full object-cover object-center border-8 border-white shadow-lg"
-                height="400"
-                width="400"
-                src="/doctor.png"
-                style={{ objectPosition: "center 20%" }}
-              />
-            </div>
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
-                  Meet Our Doctor
-                </h2>
-                <p className="text-xl font-semibold">Dr. Vinita Malhotra</p>
-                <p className="text-lg text-muted-foreground">MBBS, DGO - Gynecologist & Obstetrician</p>
-                <p className="text-muted-foreground">
-                  Dr. Vinita Malhotra is a highly skilled and experienced Vaginal Surgeon, practicing since 1996. She has dedicated her career 
-                  to providing exceptional women's healthcare, with expertise in managing both routine and complex gynecological cases.
-                </p>
-                <p className="text-muted-foreground mt-2">
-                  At Shanti Nursing Home, Dr. Malhotra specializes in comprehensive women's healthcare, from adolescence through menopause. 
-                  Her expertise includes high-risk pregnancy management, infertility treatment, and advanced vaginal surgeries, all delivered 
-                  with a compassionate and patient-centered approach.
-                </p>
-              </div>
-              <div>
-                <Link href="/doctor">
-                  <Button variant="outline">Learn More</Button>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
