@@ -21,7 +21,7 @@ export async function POST(request: Request) {
 
     const mailOptions = {
       from: process.env.GMAIL_USER,
-      to: process.env.GMAIL_USER, // Send to yourself
+      to: 'rajvini68@gmail.com', // Send to yourself
       subject: `New Appointment Request from ${name}`,
       html: `
         <h2>New Appointment Request</h2>
