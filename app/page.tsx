@@ -139,7 +139,7 @@ export default function Home() {
               },
               {
                 title: "Gynecological Services",
-                description: "Expert treatment for all female genital tract issues, including specialized vaginal surgeries",
+                description: "Expert treatment for all female genital tract issues, breast conditions, and urinary tract disorders, including specialized vaginal surgeries",
               },
               {
                 title: "Infertility Treatment",
@@ -147,7 +147,7 @@ export default function Home() {
               },
               {
                 title: "Women's Health",
-                description: "Specialized care for adolescent health, menopause management, and urinary problems",
+                description: "Specialized care for adolescent health, breast health, menopause management, and urinary problems",
               },
               {
                 title: "Preventive Care",

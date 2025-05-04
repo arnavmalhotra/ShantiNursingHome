@@ -77,9 +77,10 @@ export default function ServicesPage() {
               features: [
                 "Adolescent health care",
                 "Menopause management",
+                "Breast health evaluations and treatments",
+                "Urinary tract disorder management",
                 "Preventive health services",
                 "Health education",
-                "Regular check-ups",
               ],
               image: "/image7.png",
             },
@@ -95,19 +96,6 @@ export default function ServicesPage() {
                 "Personalized care approach",
               ],
               image: "/image5.png",
-            },
-            {
-              title: "Specialized Treatments",
-              description:
-                "Expert care for specific women's health conditions including breast issues and urinary tract disorders.",
-              features: [
-                "Breast health evaluations",
-                "Breast condition treatments",
-                "Urinary tract disorder management",
-                "Pelvic floor rehabilitation",
-                "Personalized treatment plans",
-              ],
-              image: "/image6.png",
             },
           ].map((service, index) => (
             <div key={index} className="rounded-lg border bg-card overflow-hidden">
