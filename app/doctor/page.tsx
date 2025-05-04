@@ -22,7 +22,7 @@ export default function DoctorPage() {
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
               Dr. Vinita Malhotra
             </h1>
-            <p className="text-xl font-semibold">MBBS, DGO - Gynecologist & Obstetrician</p>
+            <p className="text-xl font-semibold">MBBS, DGO - Obstetrician, Gynaecologist & Vaginal Surgeon</p>
             <div className="flex items-center gap-1">
               {[1, 2, 3, 4, 5].map((star) => (
                 <Star key={star} className="h-5 w-5 fill-primary text-primary" />
