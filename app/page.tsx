@@ -38,7 +38,7 @@ export default function Home() {
                   <p className="font-medium">Available for in-person and virtual consultations</p>
                 </div>
               </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
+              <div className="flex flex-col gap-2 sm:flex-row">
                 <Link href="/appointment">
                   <Button size="lg" className="px-8">
                     Book Appointment
@@ -190,7 +190,7 @@ export default function Home() {
                 Choose between in-person visits at our Saharanpur clinic or convenient virtual consultations
               </p>
             </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
+            <div className="flex flex-col gap-2 sm:flex-row justify-center">
               <Link href="/appointment">
                 <Button size="lg" variant="secondary" className="px-8">
                   Book Appointment
