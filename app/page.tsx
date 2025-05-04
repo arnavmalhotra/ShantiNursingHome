@@ -27,11 +27,11 @@ export default function Home() {
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
                   Dr. Vinita Malhotra
                 </h1>
-                <p className="text-xl font-semibold">MBBS, DGO - Gynecologist & Obstetrician</p>
+                <p className="text-xl font-semibold">MBBS, DGO - Obstetrician, Gynaecologist & Vaginal Surgeon</p>
                 <p className="text-lg text-muted-foreground">Shanti Nursing Home</p>
                 <p className="text-muted-foreground">
                   Dr. Vinita Malhotra is a highly skilled and experienced Vaginal Surgeon, practicing since 1996. She has dedicated her career 
-                  to providing exceptional women's healthcare, with expertise in managing both routine and complex gynecological cases.
+                  to providing exceptional women's healthcare, with expertise in managing both routine and complex cases.
                 </p>
                 <div className="flex items-center mt-2 text-primary">
                   <Video className="h-5 w-5 mr-2" />

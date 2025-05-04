@@ -53,12 +53,12 @@ export default function DoctorPage() {
               </div>
               <ul className="space-y-3">
                 <li className="border-l-2 border-primary pl-4 py-1">
-                  <p className="font-medium">MBBS</p>
+                  <p className="font-medium">MBBS, DGO</p>
                   <p className="text-sm text-muted-foreground">Medical Qualification</p>
                 </li>
                 <li className="border-l-2 border-primary pl-4 py-1">
-                  <p className="font-medium">DGO</p>
-                  <p className="text-sm text-muted-foreground">Specialized Qualification in Women's Health</p>
+                  <p className="font-medium">Specialization</p>
+                  <p className="text-sm text-muted-foreground">Obstetrician, Gynecologist and Vaginal Surgeon</p>
                 </li>
               </ul>
             </div>
