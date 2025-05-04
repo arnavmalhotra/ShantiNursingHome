@@ -1,9 +1,14 @@
+"use client"
+
 import Link from "next/link"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { useState } from "react"
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
@@ -31,7 +36,7 @@ export default function Header() {
             <Button>Book Appointment</Button>
           </Link>
         </div>
-        <Sheet>
+        <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
             <Button variant="outline" size="icon">
               <Menu className="h-5 w-5" />
@@ -40,19 +45,39 @@ export default function Header() {
           </SheetTrigger>
           <SheetContent side="right">
             <nav className="flex flex-col gap-4 mt-8">
-              <Link href="/" className="text-lg font-medium hover:underline underline-offset-4">
+              <Link 
+                href="/" 
+                className="text-lg font-medium hover:underline underline-offset-4"
+                onClick={() => setIsOpen(false)}
+              >
                 Home
               </Link>
-              <Link href="/services" className="text-lg font-medium hover:underline underline-offset-4">
+              <Link 
+                href="/services" 
+                className="text-lg font-medium hover:underline underline-offset-4"
+                onClick={() => setIsOpen(false)}
+              >
                 Services
               </Link>
-              <Link href="/doctor" className="text-lg font-medium hover:underline underline-offset-4">
+              <Link 
+                href="/doctor" 
+                className="text-lg font-medium hover:underline underline-offset-4"
+                onClick={() => setIsOpen(false)}
+              >
                 Our Doctor
               </Link>
-              <Link href="/appointment" className="text-lg font-medium hover:underline underline-offset-4">
+              <Link 
+                href="/appointment" 
+                className="text-lg font-medium hover:underline underline-offset-4"
+                onClick={() => setIsOpen(false)}
+              >
                 Appointment
               </Link>
-              <Link href="/appointment" className="mt-4">
+              <Link 
+                href="/appointment" 
+                className="mt-4"
+                onClick={() => setIsOpen(false)}
+              >
                 <Button className="w-full">Book Appointment</Button>
               </Link>
             </nav>

@@ -41,7 +41,7 @@ export default function ServicesPage() {
                 "Treatment of complex cases",
                 "Personalized surgical planning",
               ],
-              image: "/image2.png",
+              image: "/image.png",
             },
             {
               title: "Gynecological Care",
@@ -80,7 +80,7 @@ export default function ServicesPage() {
                 "Health education",
                 "Regular check-ups",
               ],
-              image: "/image5.png",
+              image: "/image7.png",
             },
             {
               title: "Infertility Treatment",
@@ -93,7 +93,7 @@ export default function ServicesPage() {
                 "Regular monitoring",
                 "Personalized care approach",
               ],
-              image: "/image6.png",
+              image: "/image5.png",
             },
           ].map((service, index) => (
             <div key={index} className="rounded-lg border bg-card overflow-hidden">
