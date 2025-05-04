@@ -31,7 +31,7 @@ export default function Home() {
                 <p className="text-lg text-muted-foreground">Shanti Nursing Home</p>
                 <p className="text-muted-foreground">
                   Dr. Vinita Malhotra is a highly skilled Gynecologist, Obstetrician and experienced Vaginal Surgeon, practicing since 1996. She has dedicated her career 
-                  to providing exceptional women's healthcare, with expertise in managing both routine and complex cases.
+                  to providing exceptional women's healthcare, with expertise in managing both routine and complex cases, including specialized care for breast and urinary tract conditions.
                 </p>
                 <div className="flex items-center mt-2 text-primary">
                   <Video className="h-5 w-5 mr-2" />
@@ -75,7 +75,7 @@ export default function Home() {
                 <p className="text-xl text-muted-foreground">Specialized Gynecology & Obstetrics Care in Saharanpur</p>
                 <p className="text-muted-foreground mt-2">
                   At Shanti Nursing Home, Dr. Malhotra specializes in comprehensive women's healthcare, from adolescence through menopause. 
-                  Her expertise includes high-risk pregnancy management, infertility treatment, and advanced vaginal surgeries, all delivered 
+                  Her expertise includes high-risk pregnancy management, infertility treatment, advanced vaginal surgeries, and specialized treatment for breast and urinary tract issues, all delivered 
                   with a compassionate and patient-centered approach.
                 </p>
               </div>

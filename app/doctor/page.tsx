@@ -32,7 +32,7 @@ export default function DoctorPage() {
             <p className="text-muted-foreground">
               Dr. Vinita Malhotra is a highly skilled Gynecologist, Obstetrician and experienced Vaginal Surgeon with over 25 years of dedicated service 
               in women's healthcare. She specializes in comprehensive gynecological care, high-risk pregnancy management, 
-              and advanced vaginal surgeries.
+              advanced vaginal surgeries, and treatment of breast and urinary tract conditions.
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
               <Link href="/appointment">
@@ -77,6 +77,7 @@ export default function DoctorPage() {
                   <p className="font-medium">Specialized Expertise</p>
                   <p className="text-sm text-muted-foreground">Vaginal Surgery</p>
                   <p className="text-sm text-muted-foreground">High-Risk Pregnancy Management</p>
+                  <p className="text-sm text-muted-foreground">Breast and Urinary Tract Treatments</p>
                 </li>
               </ul>
             </div>
@@ -101,7 +102,7 @@ export default function DoctorPage() {
               {
                 icon: <BookOpen className="h-6 w-6 text-primary" />,
                 title: "Gynecological Care",
-                description: "Treatment for all conditions related to the female genital tract and urinary problems.",
+                description: "Treatment for all conditions related to the female genital tract, breast health, and urinary problems.",
               },
               {
                 icon: <Award className="h-6 w-6 text-primary" />,

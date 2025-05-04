@@ -46,11 +46,12 @@ export default function ServicesPage() {
             {
               title: "Gynecological Care",
               description:
-                "Comprehensive treatment for all conditions related to the female reproductive system and urinary tract.",
+                "Comprehensive treatment for all conditions related to the female reproductive system, breast health, and urinary tract.",
               features: [
                 "Treatment of infections",
                 "Management of menstrual disorders",
                 "Urinary problem treatment",
+                "Breast health services",
                 "Regular health screenings",
                 "Preventive care services",
               ],
@@ -95,6 +96,19 @@ export default function ServicesPage() {
               ],
               image: "/image5.png",
             },
+            {
+              title: "Specialized Treatments",
+              description:
+                "Expert care for specific women's health conditions including breast issues and urinary tract disorders.",
+              features: [
+                "Breast health evaluations",
+                "Breast condition treatments",
+                "Urinary tract disorder management",
+                "Pelvic floor rehabilitation",
+                "Personalized treatment plans",
+              ],
+              image: "/image6.png",
+            },
           ].map((service, index) => (
             <div key={index} className="rounded-lg border bg-card overflow-hidden">
               <div className="aspect-video w-full overflow-hidden relative">
@@ -135,7 +149,7 @@ export default function ServicesPage() {
               {
                 title: "Specialized Care",
                 description:
-                  "Expert in managing high-risk pregnancies and providing comprehensive women's healthcare services.",
+                  "Expert in managing high-risk pregnancies, breast conditions, urinary tract disorders, and providing comprehensive women's healthcare services.",
               },
               {
                 title: "Established Institution",
