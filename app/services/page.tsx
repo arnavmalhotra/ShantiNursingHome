@@ -149,7 +149,7 @@ export default function ServicesPage() {
               {
                 title: "Accessible Location",
                 description:
-                  "Conveniently located on Circular Road, opposite Private Ward, SBD Hospital in Prabhatpuram, Saharanpur.",
+                  "Conveniently located on Circular Road, opposite Private Ward, SBD Hospital in Prakashpuram, Saharanpur.",
               },
               {
                 title: "Patient-Centered Approach",

@@ -13,7 +13,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2 mb-2">
               <MapPin className="h-4 w-4 text-primary" />
-              <span className="text-sm text-muted-foreground">Circular Road, Opposite Private Ward, SBD Hospital, Prabhatpuram, Saharanpur</span>
+              <span className="text-sm text-muted-foreground">Circular Road, Opposite Private Ward, SBD Hospital, Prakashpuram, Saharanpur</span>
             </div>
             <div className="flex items-center gap-2 mb-2">
               <Phone className="h-4 w-4 text-primary" />

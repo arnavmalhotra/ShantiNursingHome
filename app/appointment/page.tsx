@@ -352,7 +352,7 @@ export default function AppointmentPage() {
                     <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <div>
                       <p className="font-medium">Address</p>
-                      <p className="text-muted-foreground">Circular Road, Opposite Private Ward, SBD Hospital, Prabhatpuram, Saharanpur</p>
+                      <p className="text-muted-foreground">Circular Road, Opposite Private Ward, SBD Hospital, Prakashpuram, Saharanpur</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">

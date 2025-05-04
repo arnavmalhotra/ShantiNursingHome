@@ -99,7 +99,7 @@ export default function Home() {
             <div className="flex flex-col items-center gap-2 text-center">
               <MapPin className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">Location</h3>
-              <p className="text-muted-foreground">Circular Road, Opposite Private Ward, SBD Hospital, Prabhatpuram, Saharanpur</p>
+              <p className="text-muted-foreground">Circular Road, Opposite Private Ward, SBD Hospital, Prakashpuram, Saharanpur</p>
             </div>
             <div className="flex flex-col items-center gap-2 text-center">
               <Phone className="h-10 w-10 text-primary" />
