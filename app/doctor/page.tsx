@@ -30,7 +30,7 @@ export default function DoctorPage() {
               <span className="ml-2 text-muted-foreground">Practicing Since 1996</span>
             </div>
             <p className="text-muted-foreground">
-              Dr. Vinita Malhotra is a highly skilled and experienced Vaginal Surgeon with over 25 years of dedicated service 
+              Dr. Vinita Malhotra is a highly skilled Gynecologist, Obstetrician and experienced Vaginal Surgeon with over 25 years of dedicated service 
               in women's healthcare. She specializes in comprehensive gynecological care, high-risk pregnancy management, 
               and advanced vaginal surgeries.
             </p>
