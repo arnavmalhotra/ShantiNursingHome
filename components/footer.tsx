@@ -21,7 +21,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4 text-primary" />
-              <span className="text-sm text-muted-foreground">info@shantinursinghome.com</span>
+              <span className="text-sm text-muted-foreground">info@shantinursinghome.in</span>
             </div>
           </div>
           <div>
