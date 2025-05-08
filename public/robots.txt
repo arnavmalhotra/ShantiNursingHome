@@ -1,0 +1,6 @@
+# robots.txt for Shanti Nursing Home
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://shantinursinghome.com/sitemap.xml 
