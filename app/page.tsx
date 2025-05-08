@@ -1,6 +1,17 @@
 import Link from "next/link"
 import { Calendar, Clock, MapPin, Phone, Video } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  // Title and description are already set globally in layout.tsx,
+  // but we can override or be more specific here if needed.
+  // For the homepage, the global ones are likely sufficient,
+  // or you might want to make them slightly more engaging.
+  title: "Shanti Nursing Home - Dr. Vinita Malhotra, Saharanpur", // Slightly more concise for homepage
+  description: "Leading gynecology and obstetrics care by Dr. Vinita Malhotra at Shanti Nursing Home, Saharanpur. Specializing in women\'s health, high-risk pregnancy, and vaginal surgery.",
+  // OpenGraph data will also be inherited from layout.tsx unless overridden
+};
 
 export default function Home() {
   // WhatsApp link with phone number (country code + number without spaces or +)

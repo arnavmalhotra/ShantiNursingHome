@@ -1,6 +1,16 @@
 import { Award, BookOpen, Heart, Star, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Dr. Vinita Malhotra - Gynecologist & Obstetrician in Saharanpur",
+  description: "Learn more about Dr. Vinita Malhotra, an experienced MBBS, DGO specializing in gynecology, obstetrics, and vaginal surgery at Shanti Nursing Home, Saharanpur.",
+  openGraph: {
+    title: "Meet Dr. Vinita Malhotra - Shanti Nursing Home",
+    description: "Expert women\'s healthcare specialist in Saharanpur.",
+  },
+};
 
 export default function DoctorPage() {
   return (

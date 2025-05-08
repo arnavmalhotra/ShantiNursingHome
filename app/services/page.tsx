@@ -2,6 +2,16 @@ import { Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Gynecology & Obstetrics Services - Shanti Nursing Home, Saharanpur',
+  description: 'Explore comprehensive obstetrics care, vaginal surgery, gynecological treatments, family planning, women\'s health services, and infertility treatment offered by Dr. Vinita Malhotra at Shanti Nursing Home.',
+  openGraph: {
+    title: 'Gynecology & Obstetrics Services - Shanti Nursing Home, Saharanpur',
+    description: 'Detailed information on the specialized medical services available at Shanti Nursing Home.',
+  },
+};
 
 export default function ServicesPage() {
   return (

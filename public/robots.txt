@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://shantinursinghome.com/sitemap.xml 
+Sitemap: https://shantinursinghome.in/sitemap.xml 
