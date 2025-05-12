@@ -6,7 +6,6 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { CalendarIcon, Clock, MapPin, Phone, Mail } from "lucide-react"
 import { format } from "date-fns"
-import type { Metadata } from 'next';
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -20,15 +19,6 @@ import { toast } from "@/components/ui/use-toast"
 import { Toaster } from "@/components/ui/toaster"
 import { Card, CardContent } from "@/components/ui/card"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-
-export const metadata: Metadata = {
-  title: "Book Appointment - Shanti Nursing Home, Saharanpur",
-  description: "Schedule your appointment with Dr. Vinita Malhotra at Shanti Nursing Home in Saharanpur. Fill out the form to request your preferred date and time.",
-  openGraph: {
-    title: "Book Appointment - Shanti Nursing Home",
-    description: "Easily book your gynecology or obstetrics appointment online.",
-  },
-};
 
 const formSchema = z.object({
   name: z.string().min(2, {
