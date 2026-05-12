@@ -1,34 +1,83 @@
 import type React from "react"
+import type { Metadata } from "next"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { JsonLd } from "@/components/seo/JsonLd"
+import { medicalClinicSchema, organizationSchema, physicianSchema, websiteSchema } from "@/lib/schema"
+import { SITE_URL, clinic } from "@/lib/clinic"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"], display: "swap", preload: true })
 
-// WhatsApp message link
-const whatsappLink = "https://wa.me/919410805042?text=Hello%20Dr.%20Vinita%2C%20I%27d%20like%20to%20schedule%20a%20consultation."
+const whatsappLink = clinic.whatsapp
 
-export const metadata = {
-  title: "Shanti Nursing Home - Gynecology & Obstetrics Care in Saharanpur",
-  description: "Specialized gynecology and obstetrics care by Dr. Vinita Malhotra in Saharanpur, Uttar Pradesh.",
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Shanti Nursing Home — Gynecology & Obstetrics Care in Saharanpur",
+    template: "%s | Shanti Nursing Home",
+  },
+  description:
+    "Specialised gynecology, obstetrics, infertility and vaginal surgery care in Saharanpur by Dr. Vinita Malhotra (MBBS, DGO) — practicing since 1996.",
+  applicationName: "Shanti Nursing Home",
+  generator: "Next.js",
+  keywords: [
+    "gynecologist Saharanpur",
+    "gynaecologist Saharanpur",
+    "Dr. Vinita Malhotra",
+    "maternity hospital Saharanpur",
+    "obstetrician Saharanpur",
+    "infertility treatment Saharanpur",
+    "PCOS Saharanpur",
+    "vaginal surgery Saharanpur",
+    "ladies doctor Saharanpur",
+    "Shanti Nursing Home",
+  ],
+  alternates: { canonical: SITE_URL },
   icons: {
-    icon: '/favicon.ico',
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/og-image.png",
+  },
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    title: "Shanti Nursing Home",
+    statusBarStyle: "default",
+    capable: true,
+  },
+  formatDetection: { telephone: true, address: true, email: true },
+  robots: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+  // Plug verification codes from Google Search Console / Bing Webmaster / others.
+  // See ACTION_ITEMS.md for how to get each code.
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    other: {
+      "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION ?? "",
+      "facebook-domain-verification": process.env.NEXT_PUBLIC_FB_DOMAIN_VERIFICATION ?? "",
+    },
   },
   openGraph: {
-    title: "Shanti Nursing Home - Gynecology & Obstetrics Care in Saharanpur",
-    description: "Specialized gynecology and obstetrics care by Dr. Vinita Malhotra in Saharanpur, Uttar Pradesh.",
+    type: "website",
+    url: SITE_URL,
+    siteName: "Shanti Nursing Home",
+    title: "Shanti Nursing Home — Gynecology & Obstetrics in Saharanpur",
+    description:
+      "Senior gynecologist & obstetrician in Saharanpur. Dr. Vinita Malhotra — practicing since 1996. In-person and online consultations.",
+    locale: "en_IN",
     images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Shanti Nursing Home'
-      }
-    ]
-  }
+      { url: "/og-image.png", width: 1200, height: 630, alt: "Shanti Nursing Home" },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shanti Nursing Home — Gynecology & Obstetrics in Saharanpur",
+    description:
+      "Senior gynecologist & obstetrician in Saharanpur. Dr. Vinita Malhotra — practicing since 1996.",
+    images: ["/og-image.png"],
+  },
 }
 
 export default function RootLayout({
@@ -37,7 +86,25 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en-IN">
+      <head>
+        <meta name="theme-color" content="#7c3aed" />
+        <meta name="geo.region" content="IN-UP" />
+        <meta name="geo.placename" content="Saharanpur" />
+        <meta name="geo.position" content={`${clinic.geo.latitude};${clinic.geo.longitude}`} />
+        <meta name="ICBM" content={`${clinic.geo.latitude}, ${clinic.geo.longitude}`} />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://www.google.com" />
+        <JsonLd
+          data={[
+            medicalClinicSchema(),
+            physicianSchema(),
+            websiteSchema(),
+            organizationSchema(),
+          ]}
+        />
+      </head>
       <body className={inter.className + " text-black"}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />

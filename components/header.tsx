@@ -27,6 +27,9 @@ export default function Header() {
           <Link href="/doctor" className="text-sm font-medium hover:underline underline-offset-4">
             Our Doctor
           </Link>
+          <Link href="/blog" className="text-sm font-medium hover:underline underline-offset-4">
+            Blog
+          </Link>
           <Link href="/appointment" className="text-sm font-medium hover:underline underline-offset-4">
             Appointment
           </Link>
@@ -59,15 +62,22 @@ export default function Header() {
               >
                 Services
               </Link>
-              <Link 
-                href="/doctor" 
+              <Link
+                href="/doctor"
                 className="text-lg font-medium hover:underline underline-offset-4"
                 onClick={() => setIsOpen(false)}
               >
                 Our Doctor
               </Link>
-              <Link 
-                href="/appointment" 
+              <Link
+                href="/blog"
+                className="text-lg font-medium hover:underline underline-offset-4"
+                onClick={() => setIsOpen(false)}
+              >
+                Blog
+              </Link>
+              <Link
+                href="/appointment"
                 className="text-lg font-medium hover:underline underline-offset-4"
                 onClick={() => setIsOpen(false)}
               >
