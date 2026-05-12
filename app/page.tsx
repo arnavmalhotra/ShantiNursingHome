@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Calendar, Clock, MapPin, Phone, Video, Star } from "lucide-react"
+import { Clock, MapPin, Phone, Video, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import type { Metadata } from "next"
 import { SITE_URL, clinic, doctor, reviewsSummary } from "@/lib/clinic"

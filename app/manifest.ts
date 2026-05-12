@@ -14,14 +14,6 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: "#7c3aed",
     lang: "en-IN",
     categories: ["medical", "health"],
-    icons: [
-      { src: "/favicon.ico", sizes: "any", type: "image/x-icon" },
-      {
-        src: "/og-image.png",
-        sizes: "1200x630",
-        type: "image/png",
-        purpose: "any",
-      },
-    ],
+    icons: [{ src: "/favicon.ico", sizes: "any", type: "image/x-icon" }],
   }
 }

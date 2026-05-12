@@ -32,24 +32,68 @@ Primary category: OB-GYN / Gynecologist Clinic
 
 ## 1. Google Business Profile — do this first
 
-This is **the single biggest move you can make.** Free, takes ~20 minutes plus a 2–3 week postcard wait.
+This is **the single biggest move you can make.** "Claimed" is the floor — "optimized" is the ceiling. Below is the full process. Skip past step 1.A if you already have the listing claimed & verified.
+
+### 1.A — If you haven't claimed it yet (~20 min + 2–3 week postcard wait)
 
 - [ ] Go to **[google.com/business](https://www.google.com/business/)** → sign in with the clinic's Gmail.
 - [ ] Search "Shanti Nursing Home Saharanpur" — if it exists, click **"Own this business?"**. Otherwise create a new listing.
-- [ ] Fill in the canonical NAP exactly as above.
-- [ ] Primary category: **Obstetrician-Gynecologist**. Add secondary categories: *Maternity hospital*, *Women's health clinic*, *Fertility clinic*.
-- [ ] Add services (copy from the homepage service list).
-- [ ] Add **at least 10 photos**:
+- [ ] Google will mail a postcard with a 6-digit verification code to the clinic address. Enter it in your dashboard.
+
+### 1.B — Optimization audit (do this even if already verified)
+
+A claimed listing that isn't optimized still leaks ranking. Run through every item:
+
+- [ ] **Primary category** = "Obstetrician-Gynecologist".
+- [ ] **Secondary categories** added: "Maternity hospital", "Women's health clinic", "Fertility clinic".
+- [ ] **NAP** exactly matches the canonical block at the top of this doc.
+- [ ] **Hours** match (including the Sunday "by appointment" note in the description).
+- [ ] **Services list** — every service from the homepage entered individually with a short description.
+- [ ] **Photos: 10+ at minimum, 25+ ideal.** Listings with 100+ photos get ~520% more calls (that's not a typo). Include:
   - [ ] Building exterior (1–2)
   - [ ] Clinic signage (1)
   - [ ] Reception / waiting area (1–2)
   - [ ] Consultation room (1)
-  - [ ] Procedure / examination room (1–2)
+  - [ ] Examination room (1–2)
   - [ ] Dr. Vinita Malhotra portrait (1)
   - [ ] Equipment / facilities (1–2)
-- [ ] Google will mail a postcard with a 6-digit verification code to the clinic address (2–3 weeks). Enter it in your dashboard. **Listing is not fully live until verified.**
-- [ ] Once verified, turn on **Messaging**, **Booking**, and **Q&A**.
-- [ ] After every patient visit, ask satisfied patients to leave a Google review. Even 5 per month adds up.
+  - [ ] Team photos (1–2)
+- [ ] **EXIF-geotagged photos** — use "Photo Stamp Camera" (Android) or "Solocator" (iOS). Coordinates: `29.9684, 77.5454`. Geotagged photos are a strong local signal.
+- [ ] **Messaging turned ON** so patients can chat directly from search results.
+- [ ] **Booking button** added pointing to `https://www.shantinursinghome.in/appointment`.
+- [ ] **Q&A** seeded — you can ask and answer your own questions. Pre-seed 5–10 common ones (fees, hours, online consult availability, location, languages spoken).
+- [ ] **Description** filled — 750 chars, mention "Saharanpur", "gynecologist", "obstetrician", "since 1996", "Dr. Vinita Malhotra".
+- [ ] **Google Posts** active — at least 1 post per week (service highlight, blog link, seasonal advisory). A listing with no post in 30+ days starts to decay.
+
+### 1.C — Plug your GBP URLs into the codebase
+
+After step 1.B, grab two URLs from your GBP dashboard:
+
+**(i) Short share URL** — looks like `https://g.page/shantinursinghome` or `https://maps.app.goo.gl/...`. Find it under "Share your business profile" in the GBP dashboard.
+
+Paste into `lib/clinic.ts` → `clinic.sameAs`:
+
+```ts
+sameAs: [
+  "https://g.page/YOUR_SHORT_CODE",         // ← your GBP short URL
+  "https://www.lybrate.com/saharanpur/...", // ← Lybrate clinic profile
+  "https://www.justdial.com/Saharanpur/...", // ← Justdial listing
+  // add Facebook, Instagram once created
+],
+```
+
+This completes the entity graph — Google can cross-verify "this GBP listing = this website = this Physician".
+
+**(ii) Review request URL** — in GBP → "Get more reviews" → copy the link (looks like `https://g.page/r/.../review`).
+
+Save this link in your phone's notes. Use it in the WhatsApp follow-up template (see § 4 below).
+
+### 1.D — Ongoing
+
+- [ ] After every patient visit, send the review-request link via WhatsApp.
+- [ ] Respond to **every** Google review within 24–48 hours, even a 1-liner "Thank you". Response rate is a ranking signal.
+- [ ] Post once a week minimum.
+- [ ] Re-upload 2–3 fresh photos every quarter.
 
 ---
 
