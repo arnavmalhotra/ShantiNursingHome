@@ -58,7 +58,7 @@ export default function EditorialPolicyPage() {
             <h2 className="text-2xl font-bold">Who writes and reviews our content</h2>
             <p className="text-muted-foreground">
               All clinical articles, FAQs, condition explanations and service descriptions on this site are
-              written or reviewed by {doctor.name}, MBBS, DGO — Obstetrician, Gynaecologist & Vaginal Surgeon
+              written or reviewed by {doctor.name}, MBBS, DGO — Obstetrician, Gynaecologist & Surgeon
               with {doctor.yearsExperience}+ years of practice in Saharanpur. Where editorial support is
               used, every line is reviewed by Dr. Malhotra before publishing.
             </p>

@@ -1080,15 +1080,15 @@ export const seoPages: SeoPage[] = [
     slug: "dr-vinita-malhotra",
     title: "Dr. Vinita Malhotra | Gynaecologist & Obstetrician | Saharanpur",
     description:
-      "Meet Dr. Vinita Malhotra — MBBS, DGO. Senior gynaecologist, obstetrician & vaginal surgeon in Saharanpur. Practicing since 1996 at Shanti Nursing Home. Book online.",
+      "Meet Dr. Vinita Malhotra — MBBS, DGO. Senior gynaecologist, obstetrician & surgeon in Saharanpur. Practicing since 1996 at Shanti Nursing Home. Book online.",
     h1: "Dr. Vinita Malhotra — Gynaecologist & Obstetrician, Saharanpur",
     intro:
-      "Dr. Vinita Malhotra is a senior gynaecologist, obstetrician and vaginal surgeon practicing in Saharanpur since 1996. She runs Shanti Nursing Home — a dedicated women's healthcare clinic on Circular Road, Prakashpuram.",
+      "Dr. Vinita Malhotra is a senior gynaecologist, obstetrician and surgeon practicing in Saharanpur since 1996. She runs Shanti Nursing Home — a dedicated women's healthcare clinic on Circular Road, Prakashpuram.",
     primaryKeyword: "Dr. Vinita Malhotra",
     keywords: ["Dr. Vinita Malhotra", "Dr Vinita Malhotra Saharanpur", "Vinita Malhotra gynaecologist", "Shanti Nursing Home doctor"],
     schemaType: "MedicalSpecialty",
     services: [
-      { title: "Qualifications", description: "MBBS, DGO — Obstetrician, Gynaecologist & Vaginal Surgeon." },
+      { title: "Qualifications", description: "MBBS, DGO — Obstetrician, Gynaecologist & Surgeon." },
       { title: "Experience", description: "Practicing in Saharanpur since 1996 — over 25 years of women's healthcare." },
       { title: "Areas of Expertise", description: "Obstetrics, gynaecology, high-risk pregnancy, vaginal surgery, infertility, menopause." },
       { title: "Languages", description: "Fluent in Hindi and English." },
@@ -1107,7 +1107,7 @@ export const seoPages: SeoPage[] = [
       "Easy WhatsApp follow-up between visits.",
     ],
     faqs: [
-      { q: "What are Dr. Vinita Malhotra's qualifications?", a: "MBBS, DGO — Obstetrician, Gynaecologist and Vaginal Surgeon." },
+      { q: "What are Dr. Vinita Malhotra's qualifications?", a: "MBBS, DGO — Obstetrician, Gynaecologist and Surgeon." },
       { q: "How long has Dr. Vinita Malhotra been practicing?", a: "Since 1996 — over 25 years in Saharanpur." },
       { q: "Where is Dr. Vinita Malhotra's clinic?", a: "Shanti Nursing Home, Circular Road, Opposite Private Ward, SBD Hospital, Prakashpuram, Saharanpur 247001." },
       ...COMMON_FAQS,

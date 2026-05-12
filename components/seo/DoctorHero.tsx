@@ -30,7 +30,7 @@ export function DoctorHero({ h1, intro }: Props) {
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-primary">{h1}</h1>
           <div className="space-y-1">
             <p className="text-lg font-semibold">{doctor.name}</p>
-            <p className="text-base">MBBS, DGO — Obstetrician, Gynaecologist & Vaginal Surgeon</p>
+            <p className="text-base">MBBS, DGO — Obstetrician, Gynaecologist & Surgeon</p>
             <p className="text-sm text-muted-foreground">{clinic.name} · Practicing since {doctor.practicingSince}</p>
           </div>
 

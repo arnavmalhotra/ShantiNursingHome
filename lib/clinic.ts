@@ -34,13 +34,13 @@ export const doctor = {
   honorificPrefix: "Dr.",
   givenName: "Vinita",
   familyName: "Malhotra",
-  jobTitle: "Obstetrician, Gynaecologist & Vaginal Surgeon",
+  jobTitle: "Obstetrician, Gynaecologist & Surgeon",
   degrees: ["MBBS", "DGO"],
   practicingSince: 1996,
   yearsExperience: new Date().getFullYear() - 1996,
   image: `${SITE_URL}/doctor.png`,
   description:
-    "Dr. Vinita Malhotra is a highly skilled Gynaecologist, Obstetrician and Vaginal Surgeon practicing since 1996 in Saharanpur. She specializes in high-risk pregnancy management, infertility evaluation, advanced vaginal surgery, and women's health from adolescence through menopause.",
+    "Dr. Vinita Malhotra is a highly skilled Gynaecologist, Obstetrician and Surgeon practicing since 1996 in Saharanpur. She specializes in high-risk pregnancy management, infertility evaluation, advanced vaginal surgery, and women's health from adolescence through menopause.",
   // External profile URLs for this specific doctor. Paste real profile URLs here
   // (Lybrate doctor page, Practo profile, LinkedIn, Justdial profile, etc.).
   // Leaving array entries empty is fine — only valid URLs are emitted in schema.

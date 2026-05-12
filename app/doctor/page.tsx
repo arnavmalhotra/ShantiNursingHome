@@ -16,7 +16,7 @@ const url = `${SITE_URL}/doctor`
 export const metadata: Metadata = {
   title: "Dr. Vinita Malhotra — Gynaecologist & Obstetrician in Saharanpur",
   description:
-    "Dr. Vinita Malhotra (MBBS, DGO) — senior gynaecologist, obstetrician & vaginal surgeon in Saharanpur. Practicing since 1996 at Shanti Nursing Home. Qualifications, experience, reviews.",
+    "Dr. Vinita Malhotra (MBBS, DGO) — senior gynaecologist, obstetrician & surgeon in Saharanpur. Practicing since 1996 at Shanti Nursing Home. Qualifications, experience, reviews.",
   alternates: { canonical: url },
   openGraph: {
     type: "profile",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 const doctorFaqs = [
   {
     q: "What are Dr. Vinita Malhotra's qualifications?",
-    a: "MBBS and DGO — Obstetrician, Gynaecologist and Vaginal Surgeon.",
+    a: "MBBS and DGO — Obstetrician, Gynaecologist and Surgeon.",
   },
   {
     q: "How many years of experience does Dr. Vinita Malhotra have?",
@@ -85,7 +85,7 @@ export default function DoctorPage() {
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
                 {doctor.name}
               </h1>
-              <p className="text-xl font-semibold">MBBS, DGO — Obstetrician, Gynaecologist & Vaginal Surgeon</p>
+              <p className="text-xl font-semibold">MBBS, DGO — Obstetrician, Gynaecologist & Surgeon</p>
               <div className="flex items-center gap-1">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <Star key={star} className="h-5 w-5 fill-primary text-primary" />
@@ -132,7 +132,7 @@ export default function DoctorPage() {
                   </li>
                   <li className="border-l-2 border-primary pl-4 py-1">
                     <p className="font-medium">Specialisation</p>
-                    <p className="text-sm text-muted-foreground">Obstetrician, Gynaecologist & Vaginal Surgeon</p>
+                    <p className="text-sm text-muted-foreground">Obstetrician, Gynaecologist & Surgeon</p>
                   </li>
                 </ul>
               </div>
